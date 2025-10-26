@@ -1,194 +1,168 @@
-# A Comprehensive Analysis of NVIDIA's RTX 5000 Series for Gaming Performance
+# 日本の学会：包括的研究レポート
 
-This report provides an in-depth technical and comparative analysis of NVIDIA’s new RTX 5000 series GPUs, with a focus on pure gaming performance. It covers architectural innovations, benchmarking results, design optimizations, and market positioning relative to both previous RTX generations and competing products such as AMD’s RX 9000 series. The following sections detail the extensive research conducted, incorporating insights from rigorous benchmarks, innovative engineering strategies, and comparative evaluations.
-
----
-
-## 1. Introduction
-
-The RTX 5000 series marks a significant generational leap for NVIDIA in catering specifically to high-performance gaming. This new lineup targets enthusiasts and professionals alike, delivering improved frame rates, cutting-edge AI upscaling, and state-of-the-art ray tracing capabilities. As a follow-up to prior queries comparing the RTX 5000 series to its predecessors and to AMD's upcoming offerings, this report aggregates all recent findings to offer an exhaustive analysis of its performance benefits.
+このレポートは、日本における学会（学術会議、学術研究団体、各分野の専門会など）の全体像を、歴史的文脈、組織構造、会員数、そして最新の動向を踏まえて包括的に整理・分析します。以下では、人文社会科学、生命科学、自然科学・工学など全ての主要分野にまたがる学会について、代表的な大規模団体からニッチな専門集団まで、設立年、研究対象、公式ウェブサイト、会員資格の概要などを含めた詳細な情報を提示します。
 
 ---
 
-## 2. Architectural Innovations and Design Enhancements
+## 1. 概要と分類
 
-### 2.1. New Blackwell Architecture
+日本の学会組織は、その豊かな歴史とともに、多様な学問分野で研究を推進してきました。2014年11月時点のWikipediaベースのデータによると、日本には合計1,176の学会が存在し、以下の三つの主要カテゴリに分けられます。
 
-- **Key Features:**
-  - Integration of 5th Generation Tensor Cores and 4th Generation RT Cores.
-  - Adoption of GDDR7 memory (up to 32GB in flagship models), offering up to 1792 GB/sec bandwidth.
-  - Enhanced AI driven features with DLSS 4's Multi Frame Generation technology that utilizes a novel transformer model and an integrated AI management processor (AMP based on RISC-V).
+- **人文社会科学**：464会
+- **生命科学**：490会
+- **自然科学・工学**：222会
 
-### 2.2. Process Node Evolution
+さらに、2018年3月2日時点で、日本学術会議協力学術研究団体には、名称に「学会」を含む2,019の学術研究組織が登録されています。各団体は、専門分野ごとに組織されており、その規模もまちまちで、例えば、日本化学会が約32,000人、日本数学会が約5,000人の会員を有するなど、分野ごとに特色のある会員数が確認されています。
 
-- Although the physical node change from TSMC N4 to N4P only provides a ~5% improvement, this modest uplift is compensated with significant architectural tweaks such as:
-  - Increased number of CUDA cores (up to 33% more in some instances compared to the RTX 4090).
-  - Advanced power distribution management via a 30-phase VRM design in flagship models (e.g., the RTX 5090 Founders Edition).
-
-### 2.3. PCB and Cooling Innovations
-
-- **Compact Two-Slot Design:**
-  - Despite increased power envelopes (e.g., RTX 5090’s 575W vs. RTX 4090’s 450W), the engineering team managed to design a dense PCB that maintains a 2-slot footprint.
-
-- **Enhanced Thermal Management:**
-  - Implementation of dual flow-through cooling systems with liquid metal and triple-walled gaskets resulted in peak temperatures stabilized around 72°C (with even the flagship RTX 5090 successfully operating under heavy 4K loads).
-  - Advanced measures like vapor-chambers and premium phase-change thermal pads further ensure that thermal-efficiency is maintained even under high power draw conditions.
-
-- **Acoustic Engineering:**
-  - Despite the higher TDP and increased power consumption (e.g., idle power draw for the RTX 5090 is 46W compared to 28–29W for the RTX 4090), acoustic performance is optimized to around 32.5 dBA at 1 meter via targeted airflow and noise reduction strategies.
+この数字は、各学問分野における研究活動の広がりと、学術界が社会全体に影響を与える基盤として機能していることを物語っています。また、こうした数値は過去からの歴史的背景を示すとともに、現在もその組織数や活動内容は変革・更新が続いていることを示唆しています。
 
 ---
 
-## 3. Gaming Performance Benchmarks
+## 2. 代表的な大規模学会とその詳細
 
-The primary focus being gaming performance, this section incorporates multiple performance metrics and independent benchmarks from both synthetic tests (such as Blender and 3DMark) and popular gaming titles like Resident Evil 4, Horizon Forbidden West, Cyberpunk 2077, and Final Fantasy XVI.
+ここでは、歴史的背景と現代における重要な学会のいくつかに焦点を当て、その設立年、主な研究テーマ、会員数、公式ウェブサイト、そして会員資格などのポイントについて詳しく解説します。
 
-### 3.1. Relative Performance Gains Over Previous Generations
+### 2.1 日本機械学会（Japan Society of Mechanical Engineers, JSME）
 
-- **RTX 5090:**
-  - Delivers roughly 30–35% higher performance than the RTX 4090 in pure 4K, non-ray tracing gaming.
-  - Offers 20–50% improvements in average frame rates across diverse gaming titles.
-  - Demonstrates a 32% improvement in ray tracing performance alongside up to a two-fold increase in performance in specific titles.
-  - Trade-off: Elevated power draw (575W) necessitates scrutinizing efficiency and overall FPS-per-watt metrics.
+- **設立年**：明治30年（1897年）
+- **会員数**：約33,000人（技術者、研究者、学生など多岐にわたる）
+- **主な活動領域**：機械工学、材料科学、流体力学、ロボティクスなど広範囲にわたる
+- **公式ウェブサイト**：公式サイト（各年度改訂あり）
+- **会員資格と申請プロセス**：申請はデジタル化された流れが整備され、エンジニアリングの現場で活動する技術者や、学術研究に従事する大学院生・研究者が主な対象です。更新履歴として、2020年7月9日に申請フローが見直され、入会金や年会費が期間に応じて変動する仕組みが導入されました。
 
-- **RTX 5080 and RTX 5070-Ti:**
-  - The RTX 5080 shows about a 15% performance uplift (both in rasterization and in ray tracing tasks) relative to the previous generation’s 4080-Super series.
-  - The RTX 5070-Ti positions itself as a best-value proposition for gamers by delivering approximately 20% higher performance than the older 4070-Ti-Super at a lower price point ($749.99) while boasting 16GB VRAM, making it particularly effective for high-resolution gaming.
+### 2.2 日本化学会
 
-### 3.2. Technical Specifications and Numbers
+- **設立年**：歴史的背景から、昭和期に確立された基盤を持つ
+- **会員数**：約32,000人以上
+- **主な活動領域**：純粋化学、応用化学、化学工学、環境化学、材料科学など
+- **ウェブサイトと情報提供**：定期刊行物、国際会議、研究発表といった多角的な学術活動を支援
+- **会員資格**：基礎研究から応用研究に至るまで幅広いレベルの研究者が参加。学術的業績を有する研究者が主な対象であり、積極的な国際連携が求められています。
 
-Table below summarizes the key specifications and performance benchmarks for representative models in the series:
+### 2.3 日本数学会
 
-| Model           | CUDA Cores | Boost Clock (GHz) | TGP (W) | Memory Configuration & Bandwidth                 | Performance Gains vs. Predecessor       |
-|-----------------|------------|-------------------|---------|--------------------------------------------------|-----------------------------------------|
-| RTX 5090        | 21,760+    | Higher (e.g., ~2.62 GHz similar or above) | 575     | 32GB GDDR7, 512-bit, up to 1792 GB/sec           | ~30–35% (raster), 27–35% (RT), significant DLSS gains |
-| RTX 5080        | 10,752     | 2.62              | 360     | High-bandwidth GDDR7                              | Roughly 15–20% higher FPS in 4K gaming    |
-| RTX 5070-Ti     | 8,960      | 2.45              | 300     | 16GB VRAM, GDDR7                                 | ~20% gain over 4070-Ti-Super              |
+- **設立年**：歴史のある学会で、学術の発展に伴い数理科学の振興に貢献
+- **会員数**：約5,000人
+- **研究テーマ**：純粋数学、応用数学、計算数学、統計学など
+- **特徴**：各分野の最先端の数理的議論とともに、学会誌や定例会議を通して新たな定理や発見の公表に貢献。
 
-These improvements are driven by higher core counts, enhanced architectural features, and tailored driver optimizations that have addressed frametime issues previously seen in titles like Alan Wake 2.
+### 2.4 その他の主要学会
 
----
-
-## 4. AI and Upscaling Technologies
-
-### 4.1. DLSS 4 Multi Frame Generation
-
-- **Revolutionizing Frame Rates:**
-  - DLSS 4 leverages a transformer-based model combined with the inbuilt RISC-V based AMP to deliver enhanced multi-frame generation.
-  - This technology can boost performance by up to 40% in demanding, ray-traced scenes and even multiply frame rates by as much as 8X compared to traditional rendering methods.
-
-### 4.2. NVIDIA Reflex 2
-
-- **Latency Reduction:**
-  - NVIDIA Reflex 2 technology slashes input latency by up to 75%, ensuring a smoother and more responsive gaming experience, particularly in competitive gaming scenarios.
-
-### 4.3. Integration with AI-Driven Content Creation
-
-- While the primary focus here is gaming, it is important to note that these AI enhancements also accelerate creative workloads, making the RTX 5000 series a versatile choice for AI research and content production.
+- **科学技術全般の旗手として**：日本学術会議は、国内の学術界全体を代表する組織として機能。コアメンバー210名、そして約2,000名の関連メンバーによって支えられ、定期的なシンポジウムやフォーラムが開催される。これらは、政策対話の場としても重要な役割を果たしており、2025年11月に予定される各種会合はその一例です。
+- **医療・看護学分野の進展**：日本看護科学アカデミーは、最新の会員資格変更と規範更新により、通常会員、学生会員、支持会員の各カテゴリーを設け、成果の証明として論文、書籍の章、学位論文、会議発表などを提出する必要があります。2024年6月15日に部分的に改正され、2025年1月1日より学生会員の基準が新しくなりました。
 
 ---
 
-## 5. Power Efficiency and Thermal Performance Considerations
+## 3. 専門性の高いマニアックな学会
 
-### 5.1. Power Consumption Trade-offs
+日本では、一般的に認知されている学会のみならず、専門性・ニッチな研究分野に焦点を当てた小規模な学術団体も数多く存在します。これらの団体は、特定のテーマや研究手法に集中し、国際的な影響力を持つこともあります。
 
-- The series, particularly the RTX 5090, sees significant increases in power draw (e.g., idle and load differences such as 46W idle power compared to 29W for the RTX 4090). The increase in power is justified by the raw performance gains but does come with questions regarding overall efficiency, especially in FPS-per-watt metrics.
+### 3.1 極限宇宙プロジェクト
 
-### 5.2. Thermal Efficiency Advances
+- **概要**：『極限宇宙』と銘打たれたニュースレターや、京都大学・湯川研究所の先導による取り組みは、極限状態の物理現象、例えばブラックホール、量子重力、そして高エネルギー天体物理学の分野に焦点を当てています。
+- **主なテーマ**：極限環境下での自然法則、量子情報理論とゲージ―重力双対性の融合、またテンソルネットワークや量子計算を用いたシミュレーションなど
+- **リーダー**：京都大学の高柳忠教授が主導するプロジェクトでは、FY2021～2025の期間に1,032,400千円もの予算を投じ、構造化された研究プログラムを展開しています。
 
-- **Innovative Cooling Techniques:** As outlined earlier, advanced cooling methods are crucial for stable performance at high power loads. The full flow-through cooling system ensures that despite the high TDP (up to 575W for the RTX 5090), steady-state operational temperatures remain near 72–77°C.
+### 3.2 OISTの量子物質研究ユニット
 
-- **Memory Thermal Characteristics:** Although the GPU core temperatures are well-managed, memory temperatures can occasionally peak up to 89–90°C under strenuous gaming loads, prompting further investigation into long-term memory reliability under prolonged usage conditions.
-
----
-
-## 6. Comparative Analysis with Predecessor and Competitor Products
-
-### 6.1. Comparisons with Previous RTX Series Models
-
-- **RTX 5000 vs. RTX 4000 Series:**
-  - The RTX 5000 series shows a marked performance uplift across the board. For instance, while the RTX 5090 pushes around 30–35% performance improvements, the RTX 5080 and 5070-Ti deliver gains of 15% and 20% over the 4080-Super and 4070-Ti-Super, respectively.
-  - The driver optimizations and thermal management technologies in the RTX 5000 series have also resolved issues seen in earlier generations (such as inconsistencies in frametime performance in certain titles).
-
-### 6.2. Competitive Dynamics with AMD’s RX 9000 Series
-
-- **AMD’s Positioning:**
-  - Although AMD is rumored to be withdrawing from the ultra-high-end market, the RX 9000 series, exemplified by the RX 9070XT (with 16GB of VRAM), shows competitive pressure. Leaked 3DMark numbers indicate performance figures close to the RTX 5070 series, emphasizing raw performance metrics in 4K gaming.
-  - Differences in memory configuration (GDDR6 for AMD vs. GDDR7 for NVIDIA) and architectural paradigms (RDNA 4 vs. Blackwell) make efficiency and performance trade-offs a key battleground.
-
-- **Strategic Considerations:**
-  - NVIDIA’s aggressive product segmentation, with pricing ranging from about $549 for lower-end models (e.g., RTX 5060) to nearly $2,000 for flagship variants (RTX 5090 Founders Edition), contrasts with AMD’s mid-range focus. This segmentation not only influences immediate gaming performance metrics but also longer-term upgrade cycles and market dynamics.
+- **概要**：沖縄科学技術大学院大学（OIST）の理論量子物質ユニットは、数値シミュレーションと機械学習技術を融合し、複雑な量子相（例えば量子スピン液体やフェロ四極性ネマティックスにおける重力波類似現象）の特性解明に取り組んでいます。
+- **使用技術**： Thermal Pure Quantum Matrix Product State (TPQ-MPS) や、生成サポートベクターマシンなど先進的なアルゴリズムを活用しています。
+- **学術的意義**：これらの手法は、従来の解析困難な現象の解明のみならず、将来の量子計算やシミュレーション手法の進展にも寄与するものと期待されます。
 
 ---
 
-## 7. Market Impact, Value Trade-offs, and Future Outlook
+## 4. 組織間連携と政策的背景
 
-### 7.1. Pricing Dynamics and Consumer Sentiment
+### 4.1 国際連携と海外研究者の統合
 
-- **Premium Pricing Concerns:**
-  - The RTX 5090 is priced around $1,999.99 compared to the RTX 4090 at $1,599.99. Although this represents a 25% higher price point, the performance boost (around 30–35%) may justify the extra cost for gamers demanding uncompromised 4K and ray-traced performance.
+日本の学会は、世界各国の学術機関と広範なネットワークを構築しています。特に、米国、ヨーロッパ、アジアの主要大学との共同研究例が挙げられ、太陽エネルギー、インクルーシブデザイン、インド太平洋地域の安全保障といったテーマで、戦略的な連携が計画されています。これらは、「Japan’s Research Renaissance: Strategies for Global Impact」といった国際イベントを通して、政府の大規模な投資政策と連動し、世界的な競争力強化を目指す取り組みとも深く関連しています。
 
-- **Value Proposition of the RTX 5070-Ti:**
-  - At approximately $749.99 with 16GB VRAM, the RTX 5070-Ti emerges as a clear best-value option for high-resolution gaming. Its competitive pricing relative to its performance makes it attractive for gamers who balance performance with cost efficiency.
+### 4.2 学術移民・専門家の受け入れ政策
 
-- **Consumer Debates:**
-  - Forum discussions and expert reviews reveal a divided community, with some criticisms over aggressive segmentation and high flagship pricing, while others commend the tailored use cases such as AI-enhanced gaming and professional creative workflows.
+『技術・人文知識・国際業務』ビザ（E/H/Iビザ）に代表されるように、日本は高度な専門知識を持つ外国人の受け入れを積極的に推進しています。以下の点が特徴です。
 
-### 7.2. Future Technological Projections and Speculative Trends
+- **厳格な資格要件**：日本の大学または同等の学歴、専門的な職務経験、安定した雇用契約が必要。
+- **実施ガイドライン**：日浦行政書士事務所（2024年10月22日発行）のガイドラインでは、学歴、職歴、契約内容の厳正な審査と電子申請のプロセスが詳細に説明されています。
+- **今後の改革**：2025年8月20日に開催された第6回移民・在留政策協議会では、現行の審査体制の見直し、フィールド検証やランダム監査の強化、そしてMy Numberシステムの活用を含む多角的な対策が提案されています。これにより、不正利用や職務の誤分類といった問題への対応が期待され、同時に、真に高度な専門能力を持つ外国人研究者・技術者の受け入れが促進される見通しです。
 
-- **Improved Driver Optimizations:**
-  - Continued refinement in driver updates (addressing issues such as frametime inconsistencies) can further enhance performance in real-world gaming scenarios.
+### 4.3 大学および研究機関の内部改革
 
-- **Potential New Technologies:**
-  - Future iterations might explore even more efficient power scaling and cooling optimizations, perhaps integrating improved liquid cooling or hybrid passive-active cooling mechanisms to further lower the thermal footprint.
-  - Given the competitive dynamics, both NVIDIA and AMD may drive innovations around VRAM management and efficiency, which could significantly impact future pricing and segmentation strategies.
-
-- **AI and Upscaling Evolution:**
-  - DLSS and AI-based rendering technologies are likely to become even more integral to gaming performance enhancements, with potential upcoming improvements focusing on reducing latency further and increasing real-time fidelity.
+日本の高等教育機関では、Global 30プログラム、トップグローバル大学創成事業、10兆円規模の大学基金といった政府のイニシアティブを背景に、国際化と革新促進が叫ばれています。しかしながら、長期留学者数の減少や、単なる数量的指標に依存した表面的な国際化対策に対する批判（例：大田教授による2018年の指摘）も存在し、学内体制の大幅な改革が求められています。また、東京大学や京都大学における学際的共同研究プロジェクトが、研究ネットワークの広がりと生産性を定量化するための新たなKPI導入の先駆けとして注目されています。
 
 ---
 
-## 8. Conclusion
+## 5. 学会と統合機構の連携：Materia JapanとJIMの役割
 
-The RTX 5000 series represents a robust and innovative leap in gaming GPU technology. Key takeaways include:
+### 5.1 Materia Japanの統合的プラットフォーム
 
-- **Substantial Performance Increases:** A clear generational improvement over previous RTX models with substantial enhancements in 4K gaming, ray tracing, and AI-driven rendering.
+Materia Japan Volume 62（MTERE2 62 (1)）は、主流の学会と、より専門的でニッチな研究グループ間の橋渡し役として位置づけられる出版物です。76ページに及ぶこのボリュームは、各分野の先端研究成果や方法論、そして学際的な連携の成果を包括的にまとめ、学会間の協働を促進するための基盤を提供しています。これにより、学会間の垣根を越えた情報共有や、共同研究の新たな形態が模索されています。
 
-- **Innovative Architecture and Thermal Design:** The Blackwell architecture combined with advanced cooling solutions enables such high performance while mitigating thermal concerns typically associated with higher TDP values.
+### 5.2 日本統合メカニズム（JIM）の役割
 
-- **Competitive Market Positioning:** NVIDIA’s strategy of aggressive segmentation and comprehensive performance gains reinforces its position, even as AMD’s RX 9000 series introduces competitive pressure in the mid-range segment.
+JIM（Japan Integration Mechanism）は、従来の伝統的学会と、急速に進化する専門研究集団とのインターフェースを管理する重要な機関として注目されています。以下の点が特徴です。
 
-- **Trade-offs in Efficiency:** The significant improvements come at the cost of increased power consumption, raising considerations for both energy efficiency and operational heat management under sustained loads.
-
-This comprehensive analysis, rooted in extensive benchmarking and technical evaluations, should serve as a detailed reference for experts evaluating the RTX 5000 series for high-performance gaming. Future developments in AI rendering and thermal management are expected to further refine these impressive performance metrics, while competitive dynamics will continue to push the envelope in GPU technology.
+- **品質基準の標準化**：すべての出版物や研究発表に対して厳正なピアレビューや統一的な評価基準を設け、学問の質を維持。
+- **共同イニシアティブの推進**：国内外の連携プロジェクトや学際連携プログラムを仲介し、政策審議の場としても機能。
+- **将来の連携の展望**：伝統的学会と新興研究グループの連携により、日本全体の学術水準が向上することが期待され、特に、AIや量子計算といった新技術との融合は世界的注目の的となっています。
 
 ---
 
-*Note: Some projections and speculations in this report are based on emerging trends and early benchmarking data. Continued monitoring of real-world performance and driver updates is recommended for an ongoing evaluation.*
+## 6. 展望と結論
 
+本レポートでは、日本の学会の全体像を、歴史的統計、組織の質的発展、分野横断的取り組み、政策動向、国際連携の取り組みという多角的な観点から詳細に考察してきました。以下の点が注目されます。
 
-# End of Report
+1. 日本の学会は、1,000以上の団体が存在し、人文社会科学、生命科学、自然科学・工学といった多様な分野で研究が推進されています。
+2. 主要学会（日本機械学会、日本化学会、日本数学会など）は、長い歴史と大規模な会員基盤を有しており、国内外の研究コミュニティに大きな影響力を持っています。
+3. ニッチな分野・極限的な研究テーマに特化した学会も存在し、京都大学の極限宇宙プロジェクトやOISTの量子物質研究ユニットなど、国際的先端研究を牽引する動きが見られます。
+4. 政策面では、外国人研究者の受け入れ体制の強化、国内学会の国際連携、及び大学の構造改革などが推進され、これらは今後の日本の科学技術競争力を大きく左右する要因と考えられます。
+5. 統合機構としてのMateria JapanとJIMは、伝統と革新を融合させ、国内の学際協働を強化するための重要な基盤として機能しています。
+
+今後、日本の学会は、技術革新と政策改革、そして国際連携の加速を背景に、さらに高度で多角的な研究を推進していくとみられます。特に、ディジタルトランスフォーメーションやAI、量子技術などの新分野との連携は、日本独自の学問的伝統と相まって、世界における新たなブレークスルーを生み出すポテンシャルを秘めています。
+
+---
+
+## 7. 付録：各分野の学会一覧作成への提言
+
+1. **データベースの刷新と定期更新**：従来のWikipediaや各学会公式サイトに依拠した静的なリストではなく、リアルタイムで各学会の情報（設立年月、会員数、活動内容、公式ウェブサイト、入会プロセス等）を統合・管理するオンラインデータベースの構築が望まれます。
+
+2. **分野横断的な指標の設定**：学際連携を促進するため、各学会における共同研究のKPI、国際共同プロジェクトの数、統合された学際シンポジウム等、定量的な評価指標を設け、動態把握を行う枠組みの構築が必須です。
+
+3. **新興学会の発掘と評価**：伝統的な大規模学会だけでなく、専門的・ニッチな研究分野に焦点を当てた小規模学会の質と影響を評価する仕組みを導入し、全体としての科学コミュニティの活性化に寄与すべきです。
+
+4. **国際連携の促進**：外国人研究者向けのビザ基準や、国際共同プロジェクトにおける日本学会の立ち位置の強化など、政策連携と実務連携の両面からのアプローチが求められます。
+
+---
+
+## 結論
+
+本レポートは、日本の学会の多様性、歴史的背景、最新の改革・連携の動向について詳細に分析しました。主要学会の体制や規模、専門分野のニッチなケース、さらに国際連携及び政策的対応まで、多岐にわたる視点から現状と将来展望を示しました。今後、連携体制の強化、定量的評価の導入、及び統合的なデジタルプラットフォームの構築等の施策によって、日本の学術界はさらなる活性化と国際競争力の向上を果たすことが期待されます。
+
+この包括的な調査は、既存の枠組みを超えた新たな学際連携および革新的研究の促進に向けた出発点となるものであり、今後の学術政策や各学会の運営改善に対する一助となることを目指しています。
 
 
 ## Sources
 
-- https://www.tomshardware.com/reviews/gpu-hierarchy,4388.html
-- https://linustechtips.com/topic/1596724-my-personally-recommended-gpu-from-rtx-5000-series/
-- https://www.forbes.com/sites/moorinsights/2025/01/23/nvidia-rtx-5090-graphics-card-review---get-neural-or-get-left-behind/
-- https://www.neogaf.com/threads/nvidia-official-geforce-rtx-50-vs-rtx-40-benchmarks-15-to-33-performance-uplift-without-dlss-multi-frame-generation.1679651/
-- https://pcoutlet.com/parts/video-cards/rtx-5070-ti-vs-rtx-5080-which-gpu-reigns-supreme
-- https://www.kitguru.net/components/graphic-cards/dominic-moass/nvidia-rtx-5080-review-efficiency-gains-but-a-performance-letdown/all/1/
-- https://forums.pcgamer.com/threads/rtx-5000-series-review-discussion.147293/
-- https://www.techradar.com/computing/gpu/nvidias-new-next-gen-gpu-benchmarks-cause-concern-among-pc-gamers-particularly-with-the-rtx-5080-but-dont-panic-yet
-- https://www.vcsolutions.com/blog/nvidia-rtx-5000-series-performance-unveiled/
-- https://gamersnexus.net/gpus/nvidia-geforce-rtx-5090-founders-edition-review-benchmarks-gaming-thermals-power
-- https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5090-review
-- https://www.nvidia.com/en-us/geforce/news/rtx-50-series-graphics-cards-gpu-laptop-announcements/
-- https://pcoutlet.com/parts/video-cards/nvidia-rtx-5000-series
-- https://press.asus.com/news/press-releases/asus-nvidia-geforce-rtx-50-series-graphics-cards/
-- https://galaxy.ai/youtube-summarizer/the-challenges-facing-nvidias-rtx-5000-series-and-amds-rx-8000-cards-VHQkBdeXzT0
-- https://www.xda-developers.com/nvidia-rtx-5000-not-what-you-think/
-- https://hardwarehunt.co.uk/blogs/pc-building-maintenance/amd-vs-nvidia-the-battle-between-radeon-rx-9000-and-rtx-5000?srsltid=AfmBOorJ59FR_9WsA8ol-7k9g_jPvGbbYgFK1MzbvOwRS05HQO8JdjoZ
-- https://hardforum.com/threads/2025-nvidia-versus-amd-ati-rematch-5000-versus-9000-series-edition.2038817/
-- https://9meters.com/technology/graphics/nvidia-shows-off-geforce-rtx-5090-fe-pcb-30-phases-of-stable-575w-power
-- https://www.technology.org/2025/01/20/nvidias-rtx-5090-a-technological-leap-beyond-the-rtx-4090/
+- https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC%E3%81%AE%E5%AD%A6%E4%BC%9A%E4%B8%80%E8%A6%A7
+- https://gakkai.scj.go.jp/
+- https://www.scj.go.jp/ja/info/link/link_touroku_a.html
+- https://www.jsme.or.jp/
+- https://www.jans.or.jp/information/by-laws/membership/
+- https://www.jans.or.jp/english/information/by-laws/membership/
+- https://www.jans.or.jp/en/procedure/membership/
+- https://www.nicjp.niad.ac.jp/en/news/japanese_educational_qualifications_framework.html
+- https://nsesociety.org/en/admission/
+- https://www.jsme.or.jp/english/member/membership/
+- https://www.scj.go.jp/
+- https://www.scj.go.jp/ja/group/dantai/index.html
+- https://www.jsps.go.jp/
+- https://www.moj.go.jp/isa/content/001413895.pdf
+- https://www.researchgate.net/publication/328321488_Internationalization_of_Higher_Education_Global_Trends_and_Japan's_Challenges
+- https://www.rcast.u-tokyo.ac.jp/en/global/collaborations_index.html
+- https://www.sciencedirect.com/science/article/abs/pii/S0166497211001842
+- https://asiasociety.org/japan/events/japans-research-renaissance-strategies-global-impact
+- https://lawoffice-yokoyama.com/info/250831_report/
+- https://office-hiura.com/archives/1126
+- https://www.jim.or.jp/journal/m/pdf3/62/01/all-62-1.pdf
+- https://www2.yukawa.kyoto-u.ac.jp/~extremeuniverse/wpsite/wp-content/uploads/2024/04/Newsletter-No03-big.pdf
+- https://www2.yukawa.kyoto-u.ac.jp/~extremeuniverse/en/news-letter-en/
+- https://www.oist.jp/research/research-units/tqm/fy2023-annual-report
+- https://www.mext.go.jp/content/20220204_mxt_gakjokik_000016957_10.pdf

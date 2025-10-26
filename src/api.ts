@@ -1,7 +1,8 @@
 import cors from 'cors';
 import express, { Request, Response } from 'express';
 
-import { deepResearch, writeFinalAnswer,writeFinalReport } from './deep-research';
+import { searchConferences } from './conference-research';
+import { deepResearch, writeFinalAnswer, writeFinalReport } from './deep-research';
 
 const app = express();
 const port = process.env.PORT || 3051;
@@ -14,6 +15,18 @@ app.use(express.json());
 function log(...args: any[]) {
   console.log(...args);
 }
+
+/**
+ * ヘルスチェックエンドポイント
+ * GET /health
+ */
+app.get('/health', (req: Request, res: Response) => {
+  return res.status(200).json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+  });
+});
 
 // API endpoint to run research
 app.post('/api/research', async (req: Request, res: Response) => {
@@ -82,7 +95,7 @@ app.post('/api/generate-report',async(req:Request,res:Response)=>{
     });
 
     return report
-    
+
   }catch(error:unknown){
     console.error("Error in generate report API:",error)
     return res.status(500).json({
@@ -92,7 +105,37 @@ app.post('/api/generate-report',async(req:Request,res:Response)=>{
   }
 })
 
+/**
+ * 学会・カンファレンス検索エンドポイント
+ * GET /conferences
+ */
+app.get('/conferences', async (req: Request, res: Response) => {
+  try {
+    log('\n学会・カンファレンス検索を開始...\n');
 
+    // 将来的にクエリパラメータをサポート
+    // const { field, deadline_from, deadline_to, limit } = req.query;
+
+    // 学会検索を実行（最低10件）
+    const conferences = await searchConferences({
+      minResults: 10,
+      maxQueries: 5,
+    });
+
+    // レスポンスを返却
+    return res.status(200).json({
+      conferences,
+      count: conferences.length,
+    });
+
+  } catch (error: unknown) {
+    console.error('学会検索APIでエラーが発生:', error);
+
+    return res.status(500).json({
+      error: 'エラーが発生しました',
+    });
+  }
+});
 
 // Start the server
 app.listen(port, () => {

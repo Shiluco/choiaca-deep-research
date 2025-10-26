@@ -206,3 +206,8 @@ CUSTOM_MODEL="custom_model"
 ## License
 
 MIT License - feel free to use and modify as needed.
+
+
+docker build -t deep-research .
+docker compose up -d
+docker exec -it deep-research npm run docker
