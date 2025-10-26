@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 COPY package.json ./
-COPY .env ./.env
+# COPY .env ./.env
 
 RUN npm install
 
