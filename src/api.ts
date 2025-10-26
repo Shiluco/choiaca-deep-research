@@ -5,7 +5,7 @@ import { searchConferences } from './conference-research';
 import { deepResearch, writeFinalAnswer, writeFinalReport } from './deep-research';
 
 const app = express();
-const port = process.env.PORT || 3051;
+const port = process.env.PORT || 8080;
 
 // Middleware
 app.use(cors());
