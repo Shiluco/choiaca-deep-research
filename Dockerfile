@@ -6,6 +6,7 @@ COPY . .
 COPY package.json ./
 # COPY .env ./.env
 
+
 RUN npm install
 
 CMD ["npm", "run", "docker"]
