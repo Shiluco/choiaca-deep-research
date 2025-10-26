@@ -16,6 +16,18 @@ function log(...args: any[]) {
   console.log(...args);
 }
 
+/**
+ * ヘルスチェックエンドポイント
+ * GET /health
+ */
+app.get('/health', (req: Request, res: Response) => {
+  return res.status(200).json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    uptime: process.uptime(),
+  });
+});
+
 // API endpoint to run research
 app.post('/api/research', async (req: Request, res: Response) => {
   try {
