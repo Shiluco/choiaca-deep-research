@@ -6,5 +6,8 @@ services:
       - .env.local
     volumes:
       -  ./:/app/
+    ports:
+      - "3051:3051"
     tty: true
     stdin_open: true
+    command: npm run api:docker
